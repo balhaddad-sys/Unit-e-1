@@ -1,0 +1,13 @@
+{
+  "name": "Wasta Kuwait",
+  "short_name": "Wasta",
+  "description": "A Kuwaiti life-sim. Choices have permanent consequences.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf8f1",
+  "theme_color": "#fbf8f1",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

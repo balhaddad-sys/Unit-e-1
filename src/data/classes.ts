@@ -1,0 +1,58 @@
+import type { Class } from "@/lib/types";
+
+export const classes: Class[] = [
+  {
+    id: "oil_exec",
+    en: "Oil Executive",
+    ar: "تنفيذي نفط",
+    icon: "◆",
+    descEn: "Born to corner-office gahwa. Money flows easily; trust is harder.",
+    stats: { wasta: 8, money: 1500, rep: 4, energy: 60 },
+    factions: { government: 6, merchants: 4 },
+  },
+  {
+    id: "trader",
+    en: "Souq Trader",
+    ar: "تاجر السوق",
+    icon: "❖",
+    descEn: "The old families remember yours. The souq remembers everything.",
+    stats: { wasta: 6, money: 1200, rep: 6, energy: 70 },
+    factions: { merchants: 10 },
+  },
+  {
+    id: "patron",
+    en: "Tribal Patron",
+    ar: "كبير العائلة",
+    icon: "☾",
+    descEn: "Your father's name still opens desert tents. The city is the harder room.",
+    stats: { wasta: 10, money: 800, rep: 5, energy: 75 },
+    factions: { tribal: 10, religious: 2 },
+  },
+  {
+    id: "imam",
+    en: "Sheikh's Apprentice",
+    ar: "طالب علم",
+    icon: "✷",
+    descEn: "You wear less but mean more. The mosque is your home court.",
+    stats: { wasta: 4, money: 600, rep: 8, energy: 65 },
+    factions: { religious: 10 },
+  },
+  {
+    id: "official",
+    en: "Government Officer",
+    ar: "موظف حكومي",
+    icon: "⌘",
+    descEn: "You know the stamps that move and the ones that don't.",
+    stats: { wasta: 7, money: 1000, rep: 5, energy: 65 },
+    factions: { government: 10 },
+  },
+  {
+    id: "newcomer",
+    en: "Returning Diaspora",
+    ar: "العائد",
+    icon: "✈",
+    descEn: "Educated abroad, just back. Everyone is curious. No one is convinced yet.",
+    stats: { wasta: 3, money: 1100, rep: 3, energy: 80 },
+    factions: { merchants: 2, government: 2 },
+  },
+];
