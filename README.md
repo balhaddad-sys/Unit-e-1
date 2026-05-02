@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wasta · واسطة
 
-## Getting Started
+A Kuwaiti life-sim RPG. Built with Next.js 15 + React 19 + TypeScript + Tailwind + Zustand.
 
-First, run the development server:
+## Quick start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The complete documentation is in [`/docs`](./docs):
 
-## Learn More
+- **[Production README](./docs/README.md)** — concept, architecture, contributing, roadmap
+- **[Voice Lock](./docs/design/voice-lock.md)** — the locked Kuwaiti dialect rules — required reading for any content contributor
+- **[World Flags Reference](./docs/design/world-flags.md)** — narrative branching state
+- **[Duel Spec](./docs/design/duels.md)** — Phase 2 spec for the arena UI
+- **[Ripple Spec](./docs/design/ripples.md)** — Phase 2 spec for the cause-effect web
+- **[Adding Acts](./docs/contribute/adding-acts.md)** — fleshing out Acts 2-5
+- **[Adding Chains](./docs/contribute/adding-chains.md)** — adding personal NPC questlines
+- **[Adding Vignettes](./docs/contribute/adding-vignettes.md)** — adding zone+time-tied moments
+- **[Adding Dilemmas](./docs/contribute/adding-dilemmas.md)** — adding ethical micro-choices
+- **[Deploy Guide](./docs/DEPLOY.md)** — Vercel + Capacitor + production checklist
 
-To learn more about Next.js, take a look at the following resources:
+## Status
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Phase 1** — Foundation drop. Production-grade architecture, prologue + Act 1 + Umm Nasser chain fully wired. Acts 2-5 and most chains scaffolded with types so contributors can fill them in without touching engine code.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+See the [roadmap](./docs/README.md#roadmap) for what comes next.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proprietary — Bader Al-Haddad.

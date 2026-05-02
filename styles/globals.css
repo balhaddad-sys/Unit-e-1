@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ════════════════════════════════════════════════════════════════
+   WASTA · Global Styles
+   ════════════════════════════════════════════════════════════════ */
+
+:root {
+  --safe-top: env(safe-area-inset-top);
+  --safe-bottom: env(safe-area-inset-bottom);
+}
+
+html, body {
+  background: theme(colors.bg);
+  color: theme(colors.ink);
+  font-family: theme(fontFamily.ar);
+  direction: rtl;
+}
+
+html[lang="en"] body {
+  font-family: theme(fontFamily.sans);
+  direction: ltr;
+}
+
+/* Reset buttons inside RTL contexts */
+button {
+  font-family: inherit;
+  text-align: right;
+}
+
+/* Custom scrollbars are noisy on mobile — hide them */
+::-webkit-scrollbar { display: none; }
+* { scrollbar-width: none; }
+
+/* ════════════════════════════════════════════════════════════════
+   ANIMATIONS — used by toast/reward/levelup components
+   ════════════════════════════════════════════════════════════════ */
+
+@keyframes rewardIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes rewardOut {
+  to { opacity: 0; transform: translateX(20px); }
+}
+
+@keyframes levelUpIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reward-pop {
+  animation: rewardIn 0.3s forwards, rewardOut 0.4s 2.4s forwards;
+}
+
+.level-up-banner {
+  animation: levelUpIn 0.4s ease;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   GOAL BAR — sticky directive bar on home view
+   ════════════════════════════════════════════════════════════════ */
+.goal-bar {
+  background: linear-gradient(135deg, theme(colors.accent), theme(colors.accent-2));
+  color: white;
+}
+.goal-bar:active {
+  transform: scale(0.99);
+}
