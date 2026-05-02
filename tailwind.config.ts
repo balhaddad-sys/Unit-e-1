@@ -31,8 +31,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        ar: ["var(--font-reem)", "SF Arabic", "system-ui", "sans-serif"],
-        serif: ["var(--font-newsreader)", "Georgia", "serif"],
+        ar: ["var(--font-ar)", "SF Arabic", "system-ui", "sans-serif"],
       },
       borderRadius: {
         DEFAULT: "12px",

@@ -18,7 +18,6 @@ import type {
   GameEvent,
   GameState,
   Notification,
-  ZoneId,
 } from "@/lib/types";
 import { energyCap } from "./initialState";
 
